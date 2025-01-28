@@ -83,7 +83,19 @@ let num = 100;
 let isActive = true;
 let nothing = null;
 let notDefined;
-let obj = { name: "JS" };
+let obj = { 
+    name : "Corvit",
+    no_of_courses : 3,
+    courses_names : ["Full Stack", "Artifical Intelligent", "Cyber Security"],
+    is_course_active : true,
+    address: {
+        road : "Bank Road",
+        college : "Tech Era",
+        university : "Virtual University",
+        city : "Muzaffarabad"
+    }
+
+};
 let arr = [1, 2, 3];
 ```
 
