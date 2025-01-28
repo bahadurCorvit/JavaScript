@@ -374,12 +374,7 @@ console.log(a, b, c); // Output: 1, 2, 3
    ```
 ---
 
-Here’s a comprehensive guide on the **Date Object Methods** in JavaScript:
-
----
-
 ## Date Object Methods
-
 
 1. **`getDate()`**
    - Returns the day of the month (1–31).
