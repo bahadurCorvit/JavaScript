@@ -1,5 +1,3 @@
-# JavaScript Readme File
-
 ## Introduction to JavaScript
 JavaScript (JS) is a versatile and powerful programming language used to create dynamic and interactive content on websites. It is supported by all modern web browsers and is an essential technology alongside HTML and CSS for front-end development. Additionally, JavaScript can be used on the server-side with environments like Node.js.
 
