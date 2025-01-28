@@ -326,7 +326,7 @@ Serialization refers to converting data into a format that can be easily stored 
     const arr = [1, 2, 3];
     console.log(arr.fill(0)); // [0, 
 
-**Destructuring**
+20. **Destructuring**
 ```javascript
 const numbers = [1, 2, 3];
 const [a, b, c] = numbers;
