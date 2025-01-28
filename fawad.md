@@ -1,153 +1,153 @@
-## **String**
+## **Regular Expressions (RegEx)**
 
-A **string** is a sequence of characters used to represent text in JavaScript. Strings are enclosed in either single quotes (`'`), double quotes (`"`), or backticks (`` ` ``).
+Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are created using either **RegExp constructor** or **literal syntax**.
 
-
-### **1. Concatenation**
 ```javascript
-const firstName = "Mansoor";
-const lastName = "Nasir";
+const pattern = /[A-Z]+/g;
+const text = "Hello World!";
+console.log(text.match(pattern)); // Output: ["H", "W"]
+```
 
-// Using + operator
-const fullName = firstName + " " + lastName;
-console.log(fullName); // Output: Mansoor Nasir
+### **1. Pattern Basics**
+
+#### **Special Characters:**
+- **Escape Special Characters:** Use backslashes (`\`) to match special characters literally.
+  ```javascript
+  const pattern = /hello\?\*\\/;
+  console.log("hello?*\\ world".match(pattern)); // Output: ["hello?*\\"]
+  ```
+
+#### **Grouping:**
+- **Parentheses `()`**: Group expressions together.
+  ```javascript
+  const pattern = /(ab)+/;
+  console.log("ababab".match(pattern)); // Output: ["ababab"]
+  ```
+
+#### **Match Literally:**
+- **Backslash `\`**: Matches the preceding character literally.
+- **Forward Slash `/`**: Indicates the start and end of the regex.
+- **Logical OR `|`**: Acts as an "OR" operator.
+  ```javascript
+  const pattern = /cat|dog/;
+  console.log("I have a cat and a dog".match(pattern)); // Output: ["cat"]
+  ```
+
+### **2. Character Classes**
+
+- **`\w`**: Matches any word character (letters, digits, underscores).
+- **`\d`**: Matches any digit.
+- **`\s`**: Matches whitespace (spaces, tabs, line breaks).
+- **`\W`**: Matches any NON-word character.
+- **`\D`**: Matches any NON-digit.
+- **`\S`**: Matches any NON-whitespace character.
+- **`\t`**: Matches a tab.
+- **`\n`**: Matches a new line.
+
+```javascript
+const pattern = /\w+\s\d+/;
+console.log("Order 123".match(pattern)); // Output: ["Order 123"]
+```
+
+### **3. Brackets**
+
+- **`[xyz]`**: Matches any character inside the brackets (e.g., `x`, `y`, or `z`).
+- **`[J-Z]`**: Matches any uppercase letter from `J` to `Z`.
+- **`[^xyz]`**: Matches any character NOT inside the brackets.
+
+```javascript
+const pattern = /[A-C]/;
+console.log("XYZABC".match(pattern)); // Output: ["A"]
+
+const notPattern = /[^A-C]/;
+console.log("XYZABC".match(notPattern)); // Output: ["X"]
+```
+
+### **4. Quantifiers**
+
+- **`z?`**: Matches zero or one occurrence of `z`.
+- **`z*`**: Matches zero or more occurrences of `z`.
+- **`z+`**: Matches one or more occurrences of `z`.
+- **`z{n}`**: Matches exactly `n` occurrences of `z`.
+- **`z{n,}`**: Matches at least `n` occurrences of `z`.
+- **`z{n,m}`**: Matches between `n` and `m` occurrences of `z`.
+
+```javascript
+const pattern = /a{2,4}/;
+console.log("aaa".match(pattern)); // Output: ["aaa"]
+
+const zeroOrMore = /z*/;
+console.log("zzzzz".match(zeroOrMore)); // Output: ["zzzzz"]
+```
+
+### **5. Anchors**
+
+- **`^`**: Matches the start of a string.
+- **`$`**: Matches the end of a string.
+- **`\b`**: Matches word boundaries.
+- **`\B`**: Matches NON-word boundaries.
+
+```javascript
+const pattern = /^Hello/;
+console.log("Hello World!".match(pattern)); // Output: ["Hello"]
+
+const wordBoundary = /\bcat\b/;
+console.log("The word cat is here.".match(wordBoundary)); // Output: ["cat"]
+```
+
+### **6. Modifiers**
+
+- **`i`**: Case-insensitive.
+- **`g`**: Global match.
+- **`m`**: Multiline.
+
+```javascript
+const pattern = /hello/i; // Case-insensitive
+console.log("Hello".match(pattern)); // Output: ["Hello"]
+
+const globalPattern = /world/g; // Global match
+console.log("world world".match(globalPattern)); // Output: ["world", "world"]
 ```
 
 
-### **2. Escape Characters**
-Escape characters are used to include special characters in a string.
+### **7. Methods**
 
-| Escape Sequence | Meaning         |
-|------------------|-----------------|
-| `\'`            | Single Quote    |
-| `\"`            | Double Quote    |
-| `\\`            | Backslash       |
-| `\n`            | New Line        |
-| `\t`            | Tab             |
-
-
+#### **7.1 `exec()`**
+Returns an array of matched results or `null` if no match is found.
 ```javascript
-const text = "He said, \"Hello!\"";
-console.log(text); // Output: He said, "Hello!"
+const pattern = /\d+/;
+const result = pattern.exec("Order 123");
+console.log(result); // Output: ["123"]
 ```
 
-### **3. Template Literals**
-Template literals allow embedding expressions inside strings using backticks (`` ` ``) and `${}`.
-
+#### **7.2 `test()`**
+Tests if a pattern exists in a string (returns `true` or `false`).
 ```javascript
-const name = "Mansoor";
-const age = 25;
-const bio = `My name is ${name} and I am ${age} years old.`;
-console.log(bio);
-// Output: My name is Mansoor and I am 25 years old.
+const pattern = /\d+/;
+console.log(pattern.test("Order 123")); // Output: true
 ```
 
-### **4. String Methods**
-
-#### **4.1 `concat()`**
-Joins two or more strings.
+#### **7.3 `match()`**
+Returns an array of matches or `null`.
 ```javascript
-const str1 = "Hello";
-const str2 = "World";
-console.log(str1.concat(" ", str2)); // Output: Hello World
+const pattern = /\d+/g;
+console.log("123 456".match(pattern)); // Output: ["123", "456"]
 ```
 
-#### **4.2 `indexOf()`**
-Returns the index of the first occurrence of a substring.
+#### **7.4 `search()`**
+Returns the index of the first match or `-1` if no match is found.
 ```javascript
-const text = "Hello World";
-console.log(text.indexOf("World")); // Output: 6
+const text = "Hello World!";
+const index = text.search(/world/i);
+console.log(index); // Output: 6
 ```
 
-#### **4.3 `lastIndexOf()`**
-Returns the index of the last occurrence of a substring.
+#### **7.5 `replace()`**
+Replaces matches in a string with a new value.
 ```javascript
-const text = "Hello World World";
-console.log(text.lastIndexOf("World")); // Output: 12
-```
-
-#### **4.4 `replace()`**
-Replaces a specified value with another value in a string.
-```javascript
-const text = "Hello World";
-console.log(text.replace("World", "Everyone")); // Output: Hello Everyone
-```
-
-#### **4.5 `slice()`**
-Extracts part of a string and returns it as a new string.
-```javascript
-const text = "JavaScript";
-console.log(text.slice(0, 4)); // Output: Java
-```
-
-#### **4.6 `split()`**
-Splits a string into an array based on a delimiter.
-```javascript
-const text = "a,b,c,d";
-console.log(text.split(",")); // Output: ["a", "b", "c", "d"]
-```
-
-#### **4.7 `substring()`**
-Extracts characters between two indices.
-```javascript
-const text = "JavaScript";
-console.log(text.substring(0, 4)); // Output: Java
-```
-
-#### **4.8 `toLowerCase()`**
-Converts a string to lowercase.
-```javascript
-const text = "Hello World";
-console.log(text.toLowerCase()); // Output: hello world
-```
-
-#### **4.9 `toUpperCase()`**
-Converts a string to uppercase.
-```javascript
-const text = "Hello World";
-console.log(text.toUpperCase()); // Output: HELLO WORLD
-```
-
-#### **4.10 `trim()`**
-Removes whitespace from both ends of a string.
-```javascript
-const text = "   Hello World   ";
-console.log(text.trim()); // Output: Hello World
-```
-
-#### **4.11 `trimLeft()`**
-Removes whitespace from the start of a string.
-```javascript
-const text = "   Hello World   ";
-console.log(text.trimLeft()); // Output: Hello World   
-```
-
-#### **4.12 `trimRight()`**
-Removes whitespace from the end of a string.
-```javascript
-const text = "   Hello World   ";
-console.log(text.trimRight()); // Output:    Hello World
-```
-
-#### **4.13 `valueOf()`**
-Returns the primitive value of a string.
-```javascript
-const text = new String("Hello World");
-console.log(text.valueOf()); // Output: Hello World
-```
-
-#### **Combining Methods:**
-```javascript
-const text = "   JavaScript is awesome!   ";
-const trimmedUpperCase = text.trim().toUpperCase();
-console.log(trimmedUpperCase); // Output: JAVASCRIPT IS AWESOME!
-```
-
-#### **Using `split()` and `join()` for Replacement:**
-```javascript
-const sentence = "I love JavaScript!";
-const replaced = sentence.split(" ").join("-");
-console.log(replaced); // Output: I-love-JavaScript!
+const text = "Hello World!";
+const replaced = text.replace(/World/, "Everyone");
+console.log(replaced); // Output: Hello Everyone!
 ```
 
 ---
