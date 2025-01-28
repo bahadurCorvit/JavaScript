@@ -347,38 +347,32 @@ console.log(a, b, c); // Output: 1, 2, 3
 ## Number Methods
 
 1. **toExponential**
-   The `toExponential()` method formats a number to **exponential notation** (also called scientific notation). It returns a string representing the number in exponential form.
 
    ```javascript
    const num = 12345;
    console.log(num.toExponential(2)); // "1.23e+4"
    ```
-   - The argument (`2` in this case) specifies the number of digits after the decimal point.
 
 2. **toFixed**
-   The `toFixed()` method formats a number to a **fixed number of decimal places** and returns it as a string.
 
    ```javascript
    const num = 123.456;
    console.log(num.toFixed(2)); // "123.46"
    ```
-   - The argument (`2` in this case) specifies the number of decimal places to round the number to.
 
 3. **toPrecision**
-   The `toPrecision()` method formats a number to a **specified total number of significant digits** and returns it as a string.
 
    ```javascript
    const num = 123.456;
    console.log(num.toPrecision(4)); // "123.5"
    ```
-   - The argument (`4` in this case) specifies the total number of significant digits, including digits before and after the decimal point.
 
 4. **toString**
-   The `toString()` method returns a **string** representing the specified number in a given base (default is base 10).
 
    ```javascript
    const num = 123;
    console.log(num.toString()); // "123"
    console.log(num.toString(2)); // "1111011" (binary representation)
    ```
-   - The optional argument can specify the base (e.g., `2` for binary, `16` for hexadecimal, etc.). If no argument is provided, it defaults to base 10.
+
+---
