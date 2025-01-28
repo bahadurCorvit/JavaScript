@@ -199,72 +199,130 @@ Serialization refers to converting data into a format that can be easily stored 
 
 ## Array Methods
 
-1. **Push and Pop**
+1. **length**
    ```javascript
-   let arr = [1, 2, 3];
-   arr.push(4); // [1, 2, 3, 4]
-   arr.pop();   // [1, 2, 3]
+   const arr = [1, 2, 3];
+   console.log(arr.length); // 3
    ```
 
-2. **Shift and Unshift**
+2. **forEach**
    ```javascript
-   let arr = [1, 2, 3];
-   arr.shift();    // [2, 3]
-   arr.unshift(0); // [0, 2, 3]
+   const arr = [1, 2, 3];
+   arr.forEach(num => console.log(num));
    ```
 
-3. **Map**
+3. **map**
    ```javascript
    const nums = [1, 2, 3];
    const squared = nums.map(num => num * num);
    console.log(squared); // [1, 4, 9]
    ```
 
-4. **Filter**
+4. **filter**
    ```javascript
    const nums = [1, 2, 3, 4];
    const even = nums.filter(num => num % 2 === 0);
    console.log(even); // [2, 4]
    ```
 
-5. **Reduce**
+5. **reduce**
    ```javascript
    const nums = [1, 2, 3, 4];
    const sum = nums.reduce((acc, num) => acc + num, 0);
    console.log(sum); // 10
    ```
 
----
-
-## String Methods
-
-1. **Length**
+6. **find**
    ```javascript
-   let str = "Hello";
-   console.log(str.length); // 5
+   const nums = [1, 2, 3, 4];
+   const found = nums.find(num => num > 2);
+   console.log(found); // 3
    ```
 
-2. **Substring**
+7. **findIndex**
    ```javascript
-   let str = "JavaScript";
-   console.log(str.substring(0, 4)); // "Java"
+   const nums = [1, 2, 3, 4];
+   const index = nums.findIndex(num => num > 2);
+   console.log(index); // 2
    ```
 
-3. **Split**
+8. **some**
    ```javascript
-   let str = "a,b,c";
-   console.log(str.split(",")); // ["a", "b", "c"]
+   const nums = [1, 2, 3, 4];
+   const hasEven = nums.some(num => num % 2 === 0);
+   console.log(hasEven); // true
    ```
 
-4. **Replace**
+9. **every**
    ```javascript
-   let str = "Hello, World!";
-   console.log(str.replace("World", "JavaScript")); // "Hello, JavaScript!"
+   const nums = [2, 4, 6];
+   const allEven = nums.every(num => num % 2 === 0);
+   console.log(allEven); // true
    ```
 
-5. **Trim**
-   ```javascript
-   let str = "   Hello   ";
-   console.log(str.trim()); // "Hello"
-   ```
+10. **sort**
+    ```javascript
+    const nums = [3, 1, 4, 2];
+    nums.sort();
+    console.log(nums); // [1, 2, 3, 4]
+    ```
+
+11. **reverse**
+    ```javascript
+    const nums = [1, 2, 3];
+    nums.reverse();
+    console.log(nums); // [3, 2, 1]
+    ```
+
+12. **join**
+    ```javascript
+    const arr = ["a", "b", "c"];
+    console.log(arr.join("-")); // "a-b-c"
+    ```
+
+13. **slice**
+    ```javascript
+    const nums = [1, 2, 3, 4];
+    console.log(nums.slice(1, 3)); // [2, 3]
+    ```
+
+14. **push**
+    The `push()` adds elements to the end of an array and returns the new length of the array.
+    ```javascript
+    let arr = [1, 2, 3];
+    arr.push(4);
+    console.log(arr); // [1, 2, 3, 4]
+    ```
+
+15. **concat**
+    The `concat()` method is used to merge arrays. Concat does not change the existing arrays, but instead returns a new array.
+    ```javascript
+    let arr1 = [1, 2];
+    let arr2 = [3, 4];
+    console.log(arr1.concat(arr2)); // [1, 2, 3, 4]
+    ```
+
+16. **pop**
+    ```javascript
+    let arr = [1, 2, 3];
+    arr.pop();
+    console.log(arr); // [1, 2]
+    ```
+
+17. **indexOf**
+    ```javascript
+    const arr = [1, 2, 3, 2];
+    console.log(arr.indexOf(2)); // 1
+    ```
+
+18. **lastIndexOf**
+    ```javascript
+    const arr = [1, 2, 3, 2];
+    console.log(arr.lastIndexOf(2)); // 3
+    ```
+
+19. **fill**
+    ```javascript
+    const arr = [1, 2, 3];
+    console.log(arr.fill(0)); // [0, 
 
