@@ -3,6 +3,29 @@ JavaScript (JS) is a versatile and powerful programming language used to create 
 
 ---
 
+## Environment Setup
+
+### Node.js Installation
+1. Download Node.js from [nodejs.org](https://nodejs.org/).
+2. Install using the downloaded executable.
+3. Verify installation:
+   ```bash
+   node -v
+   npm -v
+   ```
+
+### Setting up Nodemon
+1. Install Nodemon globally:
+   ```bash
+   npm install -g nodemon
+   ```
+2. Run your script with Nodemon:
+   ```bash
+   nodemon filename.js
+   ```
+
+---
+
 ## Two Ways to Use JavaScript
 
 1. **Browser:**
@@ -95,29 +118,6 @@ let obj = {
     }
 };
 ```
-
----
-
-## Environment Setup
-
-### Node.js Installation
-1. Download Node.js from [nodejs.org](https://nodejs.org/).
-2. Install using the downloaded executable.
-3. Verify installation:
-   ```bash
-   node -v
-   npm -v
-   ```
-
-### Setting up Nodemon
-1. Install Nodemon globally:
-   ```bash
-   npm install -g nodemon
-   ```
-2. Run your script with Nodemon:
-   ```bash
-   nodemon filename.js
-   ```
 
 ---
 
