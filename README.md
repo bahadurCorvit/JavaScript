@@ -372,5 +372,125 @@ console.log(a, b, c); // Output: 1, 2, 3
    console.log(num.toString()); // "123"
    console.log(num.toString(2)); // "1111011" (binary representation)
    ```
+---
+
+Here’s a comprehensive guide on the **Date Object Methods** in JavaScript:
+
+---
+
+## Date Object Methods
+
+
+1. **`getDate()`**
+   - Returns the day of the month (1–31).
+   ```javascript
+   const date = new Date();
+   console.log(date.getDate()); // e.g., 28
+   ```
+
+2. **`getDay()`**
+   - Returns the day of the week (0–6), where 0 is Sunday and 6 is Saturday.
+   ```javascript
+   console.log(date.getDay()); // e.g., 1 (Monday)
+   ```
+
+3. **`getFullYear()`**
+   - Returns the full year (e.g., 2025).
+   ```javascript
+   console.log(date.getFullYear()); // e.g., 2025
+   ```
+
+4. **`getHours()`**
+   - Returns the hour (0–23).
+   ```javascript
+   console.log(date.getHours()); // e.g., 14 (2 PM)
+   ```
+
+5. **`getMilliseconds()`**
+   - Returns the milliseconds (0–999).
+   ```javascript
+   console.log(date.getMilliseconds()); // e.g., 123
+   ```
+
+6. **`getMinutes()`**
+   - Returns the minutes (0–59).
+   ```javascript
+   console.log(date.getMinutes()); // e.g., 45
+   ```
+
+7. **`getMonth()`**
+   - Returns the month (0–11), where 0 is January and 11 is December.
+   ```javascript
+   console.log(date.getMonth()); // e.g., 0 (January)
+   ```
+
+8. **`getSeconds()`**
+   - Returns the seconds (0–59).
+   ```javascript
+   console.log(date.getSeconds()); // e.g., 30
+   ```
+
+9. **`getTime()`**
+   - Returns the number of milliseconds since January 1, 1970.
+   ```javascript
+   console.log(date.getTime()); // e.g., 1738078823000
+   ```
+
+10. **`toDateString()`**
+   - Returns the date as a readable string.
+   ```javascript
+   console.log(date.toDateString()); // e.g., "Mon Jan 28 2025"
+   ```
+
+11. **`toJSON()`**
+   - Converts the date to a JSON string (ISO format).
+   ```javascript
+   console.log(date.toJSON()); // e.g., "2025-01-28T14:45:30.123Z"
+   ```
+
+12. **`toLocaleDateString()`**
+   - Returns the date in the local format.
+   ```javascript
+   console.log(date.toLocaleDateString()); // e.g., "1/28/2025" (US)
+   ```
+
+13. **`toLocaleString()`**
+   - Returns the date and time in the local format.
+   ```javascript
+   console.log(date.toLocaleString()); // e.g., "1/28/2025, 2:45:30 PM"
+   ```
+
+14. **`toLocaleTimeString()`**
+   - Returns the time in the local format.
+   ```javascript
+   console.log(date.toLocaleTimeString()); // e.g., "2:45:30 PM"
+   ```
+
+15. **`toTimeString()`**
+   - Returns the time as a readable string.
+   ```javascript
+   console.log(date.toTimeString()); // e.g., "14:45:30 GMT+0530 (India Standard Time)"
+   ```
+
+16. **`toUTCString()`**
+   - Returns the date in UTC format.
+   ```javascript
+   console.log(date.toUTCString()); // e.g., "Mon, 28 Jan 2025 09:15:30 GMT"
+   ```
+
+---
+
+### Example: Using Multiple Methods Together
+```javascript
+const now = new Date();
+console.log("Day of the Month:", now.getDate());
+console.log("Day of the Week:", now.getDay());
+console.log("Full Year:", now.getFullYear());
+console.log("Hour:", now.getHours());
+console.log("Minutes:", now.getMinutes());
+console.log("Seconds:", now.getSeconds());
+console.log("Locale Date:", now.toLocaleDateString());
+console.log("UTC Date:", now.toUTCString());
+```
 
 ---
