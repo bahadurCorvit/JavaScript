@@ -326,56 +326,9 @@ Serialization refers to converting data into a format that can be easily stored 
     const arr = [1, 2, 3];
     console.log(arr.fill(0)); // [0, 
 
-20. **Destructuring**
-Destructuring is a JavaScript expression that allows you to unpack values from arrays or properties from objects into distinct variables. It is a concise way to extract data.
-
-**Array Destructuring**
+**Destructuring**
 ```javascript
 const numbers = [1, 2, 3];
 const [a, b, c] = numbers;
 console.log(a, b, c); // Output: 1, 2, 3
 ```
-
-**Object Destructuring**
-```javascript
-const person = { name: "John", age: 25 };
-const { name, age } = person;
-console.log(name, age); // Output: John, 25
-```
-
----
-
-## Sets
-
-**What is a Set?**
-A JavaScript `Set` is a collection of unique values. It ensures that no duplicate items exist in the collection.
-
-**Features of Sets**
-- Sets are iterable, meaning they can be looped over using `for..of` or methods like `Array.from()`.
-- Sets do not allow duplicate values.
-
-**Creating a Set**
-```javascript
-const letters = new Set(["a", "b", "c"]);
-console.log(letters); // Output: Set { 'a', 'b', 'c' }
-```
-
-**Iterating Over a Set**
-You can iterate over a Set using `forEach` or `for..of` loops.
-
-**Using `forEach`**
-```javascript
-const letters = new Set(["a", "b", "c"]);
-letters.forEach(function(value) {
-  console.log(value); // Output: a, b, c
-});
-```
-
-**Using `for..of`**
-```javascript
-const letters = new Set(["x", "y", "z"]);
-for (let letter of letters) {
-  console.log(letter); // Output: x, y, z
-}
-```
-
