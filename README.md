@@ -474,3 +474,68 @@ console.log(a, b, c); // Output: 1, 2, 3
    ```
 
 ---
+
+## Math Object Methods
+
+1. **`Math.abs()`**
+   ```javascript
+   console.log(Math.abs(-5)); // 5
+   console.log(Math.abs(10)); // 10
+   ```
+
+2. **`Math.ceil()`**
+   ```javascript
+   console.log(Math.ceil(4.2)); // 5
+   console.log(Math.ceil(-4.8)); // -4
+   ```
+
+3. **`Math.floor()`**
+   ```javascript
+   console.log(Math.floor(4.8)); // 4
+   console.log(Math.floor(-4.2)); // -5
+   ```
+
+4. **`Math.max()`**
+   ```javascript
+   console.log(Math.max(10, 20, 30)); // 30
+   console.log(Math.max(-10, -20, -5)); // -5
+   ```
+
+5. **`Math.min()`**
+   ```javascript
+   console.log(Math.min(10, 20, 30)); // 10
+   console.log(Math.min(-10, -20, -5)); // -20
+   ```
+
+6. **`Math.pow()`**
+   ```javascript
+   console.log(Math.pow(2, 3)); // 8 (2³)
+   console.log(Math.pow(5, 2)); // 25
+   ```
+
+7. **`Math.random()`**
+   ```javascript
+   console.log(Math.random()); // e.g., 0.754321
+   console.log(Math.random() * 10); // Random number between 0 and 10
+   ```
+
+8. **`Math.round()`**
+   ```javascript
+   console.log(Math.round(4.5)); // 5
+   console.log(Math.round(4.4)); // 4
+   ```
+
+9. **`Math.sqrt()`**
+   ```javascript
+   console.log(Math.sqrt(16)); // 4
+   console.log(Math.sqrt(25)); // 5
+   ```
+
+10. **`Math.trunc()`**
+   ```javascript
+   console.log(Math.trunc(4.9)); // 4
+   console.log(Math.trunc(-4.9)); // -4
+   ```
+
+---
+
