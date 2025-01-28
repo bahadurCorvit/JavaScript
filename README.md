@@ -71,8 +71,6 @@ JavaScript provides the following data types:
    - Boolean: `true` or `false`
    - Null: `null`
    - Undefined: `undefined`
-   - Symbol (ES6): `Symbol("id")`
-   - BigInt (ES11): `123n`
 
 2. **Non-Primitive Types:**
    - Object: `{ key: "value" }`
