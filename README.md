@@ -540,7 +540,7 @@ console.log(a, b, c); // Output: 1, 2, 3
 ---
 
 
-## Set?
+## Set
 - A `Set` is a collection of **unique values**, meaning it cannot contain duplicate items.
 - A `Set` can store any type of values, including primitive types and object references.
 
@@ -620,7 +620,7 @@ console.log(letters); // Output: Set(3) { 'a', 'b', 'c' }
    ```
 
 
-### Practical Example: Removing Duplicates from an Array
+### Removing Duplicates from an Array
 ```javascript
 const array = [1, 2, 3, 4, 1, 2, 5];
 const uniqueArray = Array.from(new Set(array));
@@ -628,7 +628,7 @@ console.log(uniqueArray); // Output: [ 1, 2, 3, 4, 5 ]
 ```
 
 
-### Example: Combining Multiple Sets
+### Combining Multiple Sets
 ```javascript
 const setA = new Set(["a", "b"]);
 const setB = new Set(["b", "c", "d"]);
