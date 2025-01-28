@@ -539,3 +539,111 @@ console.log(a, b, c); // Output: 1, 2, 3
 
 ---
 
+
+## Set?
+- A `Set` is a collection of **unique values**, meaning it cannot contain duplicate items.
+- A `Set` can store any type of values, including primitive types and object references.
+
+
+### Creating a Set
+```javascript
+const letters = new Set(["a", "b", "c"]); // Initialize with an array
+console.log(letters); // Output: Set(3) { 'a', 'b', 'c' }
+```
+
+### Common Set Methods
+1. **`add(value)`**
+   ```javascript
+   const numbers = new Set();
+   numbers.add(1);
+   numbers.add(2);
+   numbers.add(1); // Duplicate, will be ignored
+   console.log(numbers); // Output: Set(2) { 1, 2 }
+   ```
+
+2. **`delete(value)`**
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   letters.delete("b");
+   console.log(letters); // Output: Set(2) { 'a', 'c' }
+   ```
+
+3. **`has(value)`**
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   console.log(letters.has("a")); // true
+   console.log(letters.has("d")); // false
+   ```
+
+4. **`clear()`**
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   letters.clear();
+   console.log(letters); // Output: Set(0) {}
+   ```
+
+5. **`size`**.
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   console.log(letters.size); // Output: 3
+   ```
+
+
+### Iterating Over a Set
+1. **Using `forEach`**
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   let text = "";
+   letters.forEach(function (value) {
+       text += value;
+   });
+   console.log(text); // Output: "abc"
+   ```
+
+2. **Using `for..of`**
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   for (const letter of letters) {
+       console.log(letter);
+   }
+   // Output:
+   // a
+   // b
+   // c
+   ```
+
+3. **Using `Array.from()` to Convert a Set**
+   ```javascript
+   const letters = new Set(["a", "b", "c"]);
+   const array = Array.from(letters);
+   console.log(array); // Output: [ 'a', 'b', 'c' ]
+   ```
+
+
+### Practical Example: Removing Duplicates from an Array
+```javascript
+const array = [1, 2, 3, 4, 1, 2, 5];
+const uniqueArray = Array.from(new Set(array));
+console.log(uniqueArray); // Output: [ 1, 2, 3, 4, 5 ]
+```
+
+
+### Example: Combining Multiple Sets
+```javascript
+const setA = new Set(["a", "b"]);
+const setB = new Set(["b", "c", "d"]);
+
+// Union
+const union = new Set([...setA, ...setB]);
+console.log(union); // Output: Set(4) { 'a', 'b', 'c', 'd' }
+
+// Intersection
+const intersection = new Set([...setA].filter(x => setB.has(x)));
+console.log(intersection); // Output: Set(1) { 'b' }
+
+// Difference
+const difference = new Set([...setA].filter(x => !setB.has(x)));
+console.log(difference); // Output: Set(1) { 'a' }
+```
+
+---
