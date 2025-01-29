@@ -184,7 +184,7 @@ let obj = {
    ```
 
 ---
-## **JavaScript Functions**
+## **Functions**
 
 Functions in JavaScript are reusable blocks of code that perform a specific task. They can accept parameters, return values, and be written in different styles.
 
@@ -227,7 +227,6 @@ console.log(multiply(5, 3)); // Output: 15
 ```
 
 5. **Rest Parameters (`...`)**
-The **rest parameter (`...`)** allows a function to accept an **indefinite number of arguments** as an array.
 
 ```javascript
 function sumAll(...numbers) {
@@ -236,7 +235,6 @@ function sumAll(...numbers) {
 console.log(sumAll(1, 2, 3, 4, 5)); // Output: 15
 ```
 6. **Arrow Functions (`=>`)**
-Arrow functions provide a **shorter syntax** and do **not bind `this`**.
 
 ```javascript
 const square = (x) => x * x;
@@ -256,7 +254,7 @@ console.log(multiply(3, 4)); // Output: 12
 const greet = () => console.log("Hello, World!");
 greet(); // Output: Hello, World!
 ```
-7. **Function Binding (For React Event Handling)**
+<!-- 7. **Function Binding (For React Event Handling)**
 Function binding ensures that `this` refers to the correct context, especially in **React components**.
 
 **Without Binding (`this` is undefined in event handlers)**
@@ -301,7 +299,7 @@ class Button extends React.Component {
         return <button onClick={this.handleClick}>Click Me</button>;
     }
 }
-```
+``` -->
 ---
 
 
