@@ -184,6 +184,130 @@ let obj = {
    ```
 
 ---
+### **JavaScript Functions**
+
+Functions in JavaScript are reusable blocks of code that perform a specific task. They can accept parameters, return values, and be written in different styles.
+
+1. **Functions with Arguments**
+Functions can take **arguments (parameters)** to process data.
+
+```javascript
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("Mansoor"); // Output: Hello, Mansoor!
+```
+
+2. **Functions Without Arguments**
+Functions can also be **defined without parameters**.
+
+```javascript
+function sayHello() {
+    console.log("Hello, World!");
+}
+sayHello(); // Output: Hello, World!
+```
+
+3. **Returning a Value (`return`)**
+Functions can **return** values using the `return` statement.
+
+```javascript
+function add(a, b) {
+    return a + b;
+}
+let sum = add(5, 10);
+console.log(sum); // Output: 15
+```
+
+4. **Default Parameters**
+If a function parameter is not provided, a **default value** can be assigned.
+
+```javascript
+function multiply(a, b = 2) {
+    return a * b;
+}
+console.log(multiply(5));  // Output: 10 (b defaults to 2)
+console.log(multiply(5, 3)); // Output: 15
+```
+
+5. **Rest Parameters (`...`)**
+The **rest parameter (`...`)** allows a function to accept an **indefinite number of arguments** as an array.
+
+```javascript
+function sumAll(...numbers) {
+    return numbers.reduce((acc, num) => acc + num, 0);
+}
+console.log(sumAll(1, 2, 3, 4, 5)); // Output: 15
+```
+6. **Arrow Functions (`=>`)**
+Arrow functions provide a **shorter syntax** and do **not bind `this`**.
+
+```javascript
+const square = (x) => x * x;
+console.log(square(4)); // Output: 16
+```
+
+**Multi-line Arrow Function**
+```javascript
+const multiply = (a, b) => {
+    return a * b;
+};
+console.log(multiply(3, 4)); // Output: 12
+```
+
+**Arrow Function Without Parameters**
+```javascript
+const greet = () => console.log("Hello, World!");
+greet(); // Output: Hello, World!
+```
+7. **Function Binding (For React Event Handling)**
+Function binding ensures that `this` refers to the correct context, especially in **React components**.
+
+**Without Binding (`this` is undefined in event handlers)**
+```javascript
+class Button extends React.Component {
+    handleClick() {
+        console.log(this); // 'this' is undefined
+    }
+
+    render() {
+        return <button onClick={this.handleClick}>Click Me</button>;
+    }
+}
+```
+
+**With Binding (`this` is correctly set)**
+```javascript
+class Button extends React.Component {
+    constructor() {
+        super();
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log(this); // 'this' refers to the component instance
+    }
+
+    render() {
+        return <button onClick={this.handleClick}>Click Me</button>;
+    }
+}
+```
+
+**Using Arrow Function to Avoid Binding**
+```javascript
+class Button extends React.Component {
+    handleClick = () => {
+        console.log(this); // 'this' refers to the component instance
+    };
+
+    render() {
+        return <button onClick={this.handleClick}>Click Me</button>;
+    }
+}
+```
+---
+
 
 ## Serialization
 Serialization refers to converting data into a format that can be easily stored or transferred.
