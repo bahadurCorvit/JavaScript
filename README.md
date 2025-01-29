@@ -184,12 +184,11 @@ let obj = {
    ```
 
 ---
-### **JavaScript Functions**
+## **JavaScript Functions**
 
 Functions in JavaScript are reusable blocks of code that perform a specific task. They can accept parameters, return values, and be written in different styles.
 
 1. **Functions with Arguments**
-Functions can take **arguments (parameters)** to process data.
 
 ```javascript
 function greet(name) {
@@ -199,7 +198,6 @@ greet("Mansoor"); // Output: Hello, Mansoor!
 ```
 
 2. **Functions Without Arguments**
-Functions can also be **defined without parameters**.
 
 ```javascript
 function sayHello() {
@@ -209,7 +207,6 @@ sayHello(); // Output: Hello, World!
 ```
 
 3. **Returning a Value (`return`)**
-Functions can **return** values using the `return` statement.
 
 ```javascript
 function add(a, b) {
@@ -220,7 +217,6 @@ console.log(sum); // Output: 15
 ```
 
 4. **Default Parameters**
-If a function parameter is not provided, a **default value** can be assigned.
 
 ```javascript
 function multiply(a, b = 2) {
