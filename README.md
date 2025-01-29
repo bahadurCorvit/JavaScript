@@ -590,25 +590,6 @@ const sentence = "I love JavaScript!";
 const replaced = sentence.split(" ").join("-");
 console.log(replaced); // Output: I-love-JavaScript!
 ```
-
----
-## Serialization
-Serialization refers to converting data into a format that can be easily stored or transferred.
-
-1. **JSON.stringify()** (Serialize an object):
-   ```javascript
-   const obj = { name: "John", age: 30 };
-   const jsonString = JSON.stringify(obj);
-   console.log(jsonString);
-   ```
-
-2. **JSON.parse()** (Deserialize a JSON string):
-   ```javascript
-   const jsonString = '{"name":"John","age":30}';
-   const obj = JSON.parse(jsonString);
-   console.log(obj);
-   ```
-
 ---
 
 ## Number Methods
@@ -804,6 +785,25 @@ Serialization refers to converting data into a format that can be easily stored 
    ```javascript
    console.log(Math.trunc(4.9)); // 4
    console.log(Math.trunc(-4.9)); // -4
+   ```
+
+---
+
+## Serialization
+Serialization refers to converting data into a format that can be easily stored or transferred.
+
+1. **JSON.stringify()** (Serialize an object):
+   ```javascript
+   const obj = { name: "John", age: 30 };
+   const jsonString = JSON.stringify(obj);
+   console.log(jsonString);
+   ```
+
+2. **JSON.parse()** (Deserialize a JSON string):
+   ```javascript
+   const jsonString = '{"name":"John","age":30}';
+   const obj = JSON.parse(jsonString);
+   console.log(obj);
    ```
 
 ---
