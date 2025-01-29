@@ -780,12 +780,12 @@ console.log(replaced); // Output: I-love-JavaScript!
    console.log(Math.sqrt(16)); // 4
    console.log(Math.sqrt(25)); // 5
    ```
-
+<!-- 
 10. **`Math.trunc()`**
    ```javascript
    console.log(Math.trunc(4.9)); // 4
    console.log(Math.trunc(-4.9)); // -4
-   ```
+   ``` -->
 
 ---
 
