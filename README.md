@@ -1201,77 +1201,92 @@ test("Mansoor", "Nasir", "Pakistan", 30);
 ## **Task**
 **Group-1**
 ```javascript
- Student Names = ["A", "B", "C", "D"];
+ Student_Names = ["A", "B", "C", "D"];
+ Task = "Ludo Game";
  ```
 
 **Group-2**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Typing Speed Test";
  ```
 
 **Group-3**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Random Quote Generator";
  ```
 
 **Group-4**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Stopwatch / Timer";
  ```
 
 **Group-5**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "To-Do List App";
  ```
 
 **Group-6**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Calculator";
  ```
 
  **Group-7**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Digital Clock";
  ```
 
  **Group-8**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "QR Code Generator";
  ```
 
  **Group-9**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Color Picker";
  ```
 
 
   **Group-10**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Text-to-Speech Converter";
  ```
 
   **Group-11**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Currency Converter";
  ```
 
   **Group-12**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Analog Clock";
  ```
 
   **Group-13**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Traffic Light Simulator";
  ```
 
   **Group-14**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Text Encryption & Decryption Tool";
  ```
 
   **Group-15**
 ```javascript
  Student Names = ["A", "B", "C", "D"];
+ Task = "Chatbot (Basic AI)";
  ```
  ---
