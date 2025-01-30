@@ -927,13 +927,28 @@ const text = "Hello World!";
 console.log(text.match(pattern)); // Output: ["H", "W"]
 ```
 
+```javascript
+const pattern = /[a-z]+/g;
+const text = "Hello World!";
+console.log(text.match(pattern)); // Output: ["ello", "orld"]
+```
+
+```javascript
+const pattern = /[A-Z][a-z]*/g;
+const text = "Hello World!";
+console.log(text.match(pattern)); // Output: ["Hello", "World"]
+```
+
 ### **1. Pattern Basics**
 
 #### **Special Characters:**
 - **Escape Special Characters:** Use backslashes (`\`) to match special characters literally.
   ```javascript
-  const pattern = /hello\?\*\\/;
-  console.log("hello?*\\ world".match(pattern)); // Output: ["hello?*\\"]
+const vari = "\"hello"; 
+console.log(vari)
+
+const pattern = /\"hello/;
+console.log("\"hello world".match(pattern)); // Output: ['"hello"']
   ```
 
 #### **Grouping:**
