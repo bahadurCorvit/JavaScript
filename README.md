@@ -943,13 +943,13 @@ console.log(text.match(pattern)); // Output: ["Hello", "World"]
 
 #### **Special Characters:**
 - **Escape Special Characters:** Use backslashes (`\`) to match special characters literally.
-  ```javascript
+```javascript
 const vari = "\"hello"; 
 console.log(vari)
 
 const pattern = /\"hello/;
 console.log("\"hello world".match(pattern)); // Output: ['"hello"']
-  ```
+```
 
 #### **Grouping:**
 - **Parentheses `()`**: Group expressions together.
