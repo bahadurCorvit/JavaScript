@@ -1197,3 +1197,81 @@ test("Mansoor", "Nasir", "Pakistan", 30);
    console.log(rest); // Output: [20, 30]
    ```
 ---
+
+## **Task**
+**Group-1**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+**Group-2**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+**Group-3**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+**Group-4**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+**Group-5**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+**Group-6**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+ **Group-7**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+ **Group-8**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+ **Group-9**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+
+  **Group-10**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+  **Group-11**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+  **Group-12**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+  **Group-13**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+  **Group-14**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+
+  **Group-15**
+```javascript
+ Student Names = ["A", "B", "C", "D"];
+ ```
+ ---
