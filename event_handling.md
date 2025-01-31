@@ -1,5 +1,5 @@
 
-## *&JavaScript Event Handling**
+## **JavaScript Event Handling**
 
 Event handling is a crucial part of making interactive web pages, where you can capture user actions like clicks, key presses, and mouse movements.
 
