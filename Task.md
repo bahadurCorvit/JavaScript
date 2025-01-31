@@ -109,69 +109,106 @@
    **Group-16**
 ```javascript
  Student Names = ["Hammad", "Aamar"];
- Task = "Text Encryption & Decryption Tool";
+ Task = "AI-Powered Resume Builder";
  ```
   ---
 
   **Group-17**
 ```javascript
  Student Names = ["Obaid", "Asim"];
- Task = "Chatbot (Basic AI)";
+ Task = "Speech-to-Text Converter";
  ```
  ---
 
    **Group-18**
 ```javascript
  Student Names = ["Hammad", "Aamar"];
- Task = "Text Encryption & Decryption Tool";
+ Task = "Random Joke Generator";
  ```
  ---
 
   **Group-19**
 ```javascript
  Student Names = ["Obaid", "Asim"];
- Task = "Chatbot (Basic AI)";
+ Task = "Text Word Counter";
  ```
  ---
 
    **Group-20**
 ```javascript
  Student Names = ["Hammad", "Aamar"];
- Task = "Text Encryption & Decryption Tool";
+ Task = "Language Translator";
  ```
  ---
 
   **Group-21**
 ```javascript
  Student Names = ["Obaid", "Asim"];
- Task = "Chatbot (Basic AI)";
+ Task = "Quiz App";
  ```
  ---
 
    **Group-22**
 ```javascript
  Student Names = ["Hammad", "Aamar"];
- Task = "Text Encryption & Decryption Tool";
+ Task = "Dictionary App";
  ```
   ---
 
   **Group-23**
 ```javascript
  Student Names = ["Obaid", "Asim"];
- Task = "Chatbot (Basic AI)";
+ Task = "AI-Based Image Caption Generator";
  ```
  ---
 
    **Group-24**
 ```javascript
  Student Names = ["Hammad", "Aamar"];
- Task = "Text Encryption & Decryption Tool";
+ Task = "Virtual Whiteboard";
  ```
  ---
 
   **Group-25**
 ```javascript
  Student Names = ["Obaid", "Asim"];
- Task = "Chatbot (Basic AI)";
+ Task = "Online Polling System)";
  ```
  ---
+
+ 
+  **Group-26**
+```javascript
+ Student Names = ["Obaid", "Asim"];
+ Task = "Quiz App";
+ ```
+ ---
+
+   **Group-27**
+```javascript
+ Student Names = ["Hammad", "Aamar"];
+ Task = "Dictionary App";
+ ```
+  ---
+
+  **Group-28**
+```javascript
+ Student Names = ["Obaid", "Asim"];
+ Task = "AI-Based Image Caption Generator";
+ ```
+ ---
+
+   **Group-29**
+```javascript
+ Student Names = ["Hammad", "Aamar"];
+ Task = "Virtual Whiteboard";
+ ```
+ ---
+
+  **Group-30**
+```javascript
+ Student Names = ["Obaid", "Asim"];
+ Task = "Online Polling System)";
+ ```
+ ---
+
