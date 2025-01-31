@@ -179,36 +179,36 @@
  
   **Group-26**
 ```javascript
- Student Names = ["Obaid", "Asim"];
- Task = "Quiz App";
+ Student Names = [];
+ Task = "Password Strength Checker";
  ```
  ---
 
    **Group-27**
 ```javascript
- Student Names = ["Hammad", "Aamar"];
- Task = "Dictionary App";
+ Student Names = [];
+ Task = "Lyrics Finder";
  ```
   ---
 
   **Group-28**
 ```javascript
- Student Names = ["Obaid", "Asim"];
- Task = "AI-Based Image Caption Generator";
+ Student Names = [];
+ Task = "Resume Analyzer";
  ```
  ---
 
    **Group-29**
 ```javascript
- Student Names = ["Hammad", "Aamar"];
- Task = "Virtual Whiteboard";
+ Student Names = [];
+ Task = "Movie Recommendation App";
  ```
  ---
 
   **Group-30**
 ```javascript
- Student Names = ["Obaid", "Asim"];
- Task = "Online Polling System)";
+ Student Names = [];
+ Task = "Daily Motivation App)";
  ```
  ---
 
