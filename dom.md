@@ -1,5 +1,3 @@
-Here's a README file that documents the methods you've listed, which are commonly used in JavaScript for 
-
 ## **DOM Methods**
 
 This document provides an overview of the most commonly used DOM manipulation methods in JavaScript. These methods are essential for accessing and interacting with HTML elements on a web page.
