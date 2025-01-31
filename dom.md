@@ -1,6 +1,6 @@
 ## **DOM Methods**
 
-This document provides an overview of the most commonly used DOM manipulation methods in JavaScript. These methods are essential for accessing and interacting with HTML elements on a web page.
+These methods are essential for accessing and interacting with HTML elements on a web page.
 
 ## 1. `getElementById`
 
