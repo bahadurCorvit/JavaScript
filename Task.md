@@ -115,7 +115,7 @@
 
   **Group-17**
 ```javascript
- Student Names = [];
+ Student Names = ["Zaheem","Aamar"];
  Task = "Speech-to-Text Converter";
  ```
  ---
@@ -136,14 +136,14 @@
 
    **Group-20**
 ```javascript
- Student Names = [];
+ Student Names = ["Azan", "Aamar"];
  Task = "Language Translator";
  ```
  ---
 
   **Group-21**
 ```javascript
- Student Names = [];
+ Student Names = ["Jamshaid", "Mubashir"];
  Task = "Quiz App";
  ```
  ---
@@ -157,21 +157,21 @@
 
   **Group-23**
 ```javascript
- Student Names = [];
+ Student Names = ["Kashif", "Sami"];
  Task = "AI-Based Image Caption Generator";
  ```
  ---
 
    **Group-24**
 ```javascript
- Student Names = [];
+ Student Names = ["Moiz", "Adeel"];
  Task = "Virtual Whiteboard";
  ```
  ---
 
   **Group-25**
 ```javascript
- Student Names = [];
+ Student Names = ["Talha","Waleed"];
  Task = "Online Polling System)";
  ```
  ---
@@ -179,35 +179,35 @@
  
   **Group-26**
 ```javascript
- Student Names = [];
+ Student Names = ["Shakoor", "Mateen"];
  Task = "Password Strength Checker";
  ```
  ---
 
    **Group-27**
 ```javascript
- Student Names = [];
+ Student Names = ["Naheem", "Rehman"];
  Task = "Lyrics Finder";
  ```
   ---
 
   **Group-28**
 ```javascript
- Student Names = [];
+ Student Names = ["Junaid", "Noman"];
  Task = "Resume Analyzer";
  ```
  ---
 
    **Group-29**
 ```javascript
- Student Names = [];
+ Student Names = ["Haroon", "Umair"];
  Task = "Movie Recommendation App";
  ```
  ---
 
   **Group-30**
 ```javascript
- Student Names = ["Tyba"];
+ Student Names = ["Tyba Zahid"];
  Task = "Daily Motivation App)";
  ```
  ---
