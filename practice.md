@@ -1,4 +1,4 @@
-## 1. **onclick**
+# 1. **onclick**
 
 The `onclick` event is triggered when a user clicks on an element. This event can be used to execute a JavaScript function when the element is clicked.
 
