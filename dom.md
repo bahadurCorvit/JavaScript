@@ -462,9 +462,160 @@ let elements = document.querySelectorAll("selector");
 </body>
 </html>
 ```
+---
+
+## **form**
+
+The `forms` property returns a collection of all `<form>` elements within a document. It can be used to access, manipulate, or validate forms.
+
+### Syntax:
+```javascript
+document.forms
+```
+
+### Access form by index:
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1" onsubmit="get_username_password(event)">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        function get_username_password(event) {
+            event.preventDefault();
+
+            const form = document.getElementById("form1");
+
+            // Accessing by index:
+            const username = form.elements[0].value; // Index 0 for the first input (username)
+            const password = form.elements[1].value; // Index 1 for the second input (password)
+
+            console.log("Username:", username);
+            console.log("Password:", password);
+
+            document.getElementById("p1").textContent = "Username: " + username;
+            document.getElementById("p2").textContent = "Password: " + password;
+        }
+    </script>
+</body>
+</html>
+```
+
+### Access form by name:
+```javascript
+<form id="myForm" onsubmit="handleSubmit(event)">
+  <input type="text" name="username" required>
+  <input type="password" name="password" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const form = document.getElementById("myForm");
+  const username = form.elements["username"].value;  // Access by name
+  const password = form.elements["password"].value;  // Access by name
+
+  console.log("Username:", username);
+  console.log("Password:", password);
+}
+</script>
+```
+
+### Access form by ID:
+```javascript
+<form id="myForm" onsubmit="handleSubmit(event)">
+  <input type="text" id="username" required>
+  <input type="password" id="password" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const username = document.getElementById("username").value; // Access by ID
+  const password = document.getElementById("password").value; // Access by ID
+
+  console.log("Username:", username);
+  console.log("Password:", password);
+
+  // ... process username and password ...
+}
+</script>
+
+```
+
+### Access form elements:
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+  <input type="text" name="username" value="Initial Value">
+  <input type="password" name="password">
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  const form = document.getElementById("myForm");
+  const username = form.elements["username"].value; // Get the value
+  form.elements["username"].value = "New Value"; // Set the value
+
+  console.log(username); // Output: Initial Value
+</script>
+
+</body>
+</html>
+```
+
 
 ```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+  <input type="text" name="username" value="Initial Value">
+  <input type="password" name="password">
+  <button type="submit">Submit</button>
+</form>
 
+<script>
+  const form = document.getElementById("myForm");
+  const username = form.elements["username"].value; // Get the value
+  form.elements["username"].value = "New Value"; // Set the value
+
+  console.log(username); // Output: Initial Value
+</script>
+
+</body>
+</html>
 ```
 
 ```javascript
