@@ -3,43 +3,7 @@
 
 Event handling is a crucial part of making interactive web pages, where you can capture user actions like clicks, key presses, and mouse movements.
 
-## 1. `addEventListener`
-
-The `addEventListener()` method attaches an event handler to a specific element without overwriting any existing event handlers. This method is preferred over using inline event attributes and the `onclick`/`onmouseover` attributes.
-
-### Syntax:
-```javascript
-element.addEventListener("event", function, useCapture);
-```
-
-```javascript
-let button = document.getElementById("myButton");
-button.addEventListener("click", function() {
-    alert("Button clicked!");
-});
-```
-
-## 2. `removeEventListener`
-
-The `removeEventListener()` method removes an event handler that was previously added using `addEventListener()`. Both the event type and the function must match.
-
-### Syntax:
-```javascript
-element.removeEventListener("event", function, useCapture);
-```
-
-```javascript
-let button = document.getElementById("myButton");
-function handleClick() {
-    alert("Button clicked!");
-}
-button.addEventListener("click", handleClick);
-button.removeEventListener("click", handleClick); // Removes the click event listener
-```
-
-## 3. `onclick`
-
-The `onclick` property is used to assign an event handler for the "click" event. This method is not recommended when dealing with multiple event listeners, as it overrides previous ones.
+## 1. `onclick`
 
 ### Syntax:
 ```javascript
@@ -49,13 +13,26 @@ element.onclick = function() {
 ```
 
 ```javascript
-let button = document.getElementById("myButton");
-button.onclick = function() {
-    alert("Button clicked!");
-};
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple onclick Example</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Click me</button>
+
+<script>
+function myFunction() {
+  alert("Hello!");
+}
+</script>
+
+</body>
+</html>
 ```
 
-## 4. `onmouseover`
+## 2. `onmouseover`
 
 The `onmouseover` event is triggered when the mouse pointer enters the area of an element.
 
@@ -67,13 +44,26 @@ element.onmouseover = function() {
 ```
 
 ```javascript
-let div = document.getElementById("myDiv");
-div.onmouseover = function() {
-    div.style.backgroundColor = "yellow";
-};
+<!DOCTYPE html>
+<html>
+<head>
+<title>onmouseover Example</title>
+</head>
+<body>
+
+<p onmouseover="showMessage()">Hover over me!</p>
+
+<script>
+function showMessage() {
+  alert("Hello!");
+}
+</script>
+
+</body>
+</html>
 ```
 
-## 5. `onmouseout`
+## 3. `onmouseout`
 
 The `onmouseout` event is triggered when the mouse pointer leaves the area of an element.
 
@@ -85,13 +75,30 @@ element.onmouseout = function() {
 ```
 
 ```javascript
-let div = document.getElementById("myDiv");
-div.onmouseout = function() {
-    div.style.backgroundColor = "";
-};
+<!DOCTYPE html>
+<html>
+<head>
+<title>onmouseover Example</title>
+</head>
+<body>
+
+<p onmouseover="showMessage()" onmouseout="hideMessage()">Hover over me!</p>
+
+<script>
+function showMessage() {
+  alert("Mouse is over!");
+}
+
+function hideMessage() {
+  alert("Mouse is out!");
+}
+</script>
+
+</body>
+</html>
 ```
 
-## 6. `onkeydown`
+## 4. `onkeydown`
 
 The `onkeydown` event occurs when a key is pressed down on the keyboard.
 
@@ -103,10 +110,17 @@ element.onkeydown = function(event) {
 ```
 
 ```javascript
-let input = document.getElementById("myInput");
-input.onkeydown = function(event) {
-    alert("Key pressed: " + event.key);
-};
+<!DOCTYPE html>
+<html>
+<head>
+<title>onmouseover Example</title>
+</head>
+<body>
+
+<input type="text" onkeydown="console.log('Key down!');">
+
+</body>
+</html>
 ```
 
 ## 7. `onkeyup`
@@ -121,65 +135,17 @@ element.onkeyup = function(event) {
 ```
 
 ```javascript
-let input = document.getElementById("myInput");
-input.onkeyup = function(event) {
-    alert("Key released: " + event.key);
-};
-```
+<!DOCTYPE html>
+<html>
+<head>
+<title>onmouseover Example</title>
+</head>
+<body>
 
-## 8. `onchange`
+<input type="text" onkeyup="console.log('Key up!');">
 
-The `onchange` event occurs when the value of an element has changed (typically used for `<input>`, `<textarea>`, or `<select>` elements).
-
-### Syntax:
-```javascript
-element.onchange = function() {
-    // Code to execute when value changes
-};
-```
-
-```javascript
-let select = document.getElementById("mySelect");
-select.onchange = function() {
-    alert("You selected: " + select.value);
-};
-```
-
-## 9. `onsubmit`
-
-The `onsubmit` event is triggered when a form is submitted. It can be used to validate a form or prevent its submission.
-
-### Syntax:
-```javascript
-form.onsubmit = function(event) {
-    // Code to execute on form submission
-};
-```
-
-```javascript
-let form = document.getElementById("myForm");
-form.onsubmit = function(event) {
-    event.preventDefault(); // Prevents form submission
-    alert("Form submitted!");
-};
-```
-
-## 10. `onfocus`
-
-The `onfocus` event occurs when an element gains focus, typically used for form elements like input fields or text areas.
-
-### Syntax:
-```javascript
-element.onfocus = function() {
-    // Code to execute when the element gains focus
-};
-```
-
-```javascript
-let input = document.getElementById("myInput");
-input.onfocus = function() {
-    input.style.backgroundColor = "lightblue";
-};
+</body>
+</html>
 ```
 
 ---
