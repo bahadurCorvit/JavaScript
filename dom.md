@@ -589,37 +589,6 @@ function handleSubmit(event) {
 </body>
 </html>
 ```
-
-
-```javascript
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form id="myForm">
-  <input type="text" name="username" value="Initial Value">
-  <input type="password" name="password">
-  <button type="submit">Submit</button>
-</form>
-
-<script>
-  const form = document.getElementById("myForm");
-  const username = form.elements["username"].value; // Get the value
-  form.elements["username"].value = "New Value"; // Set the value
-
-  console.log(username); // Output: Initial Value
-</script>
-
-</body>
-</html>
-```
-
-```javascript
-
-```
+---
 
 
