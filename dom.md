@@ -179,4 +179,8 @@ let element = document.querySelector("selector");
 
 The `querySelectorAll()` method returns a static NodeList representing a list of all the elements matching the specified CSS selector(s).
 
+### Syntax:
+```javascript
+let elements = document.querySelectorAll("selector");
+```
 ---
