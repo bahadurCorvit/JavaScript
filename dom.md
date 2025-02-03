@@ -184,3 +184,291 @@ The `querySelectorAll()` method returns a static NodeList representing a list of
 let elements = document.querySelectorAll("selector");
 ```
 ---
+
+
+## **.innerHTML**
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+    <h2 id="head2"></h2>
+
+    <script>
+        const changeDM = () => {
+            document.getElementById("head1").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
+```
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+
+    <script>
+        const changeDM = () => {
+        const t = document.getElementById("head1").innerHTML
+            const cap = t.toUpperCase()
+            document.getElementById("head1").innerHTML = cap;
+        }
+    </script>
+</body>
+</html>
+```
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+    <h2 id="head2"></h2>
+
+    <script>
+        const changeDM = () => {
+            document.getElementById("head1").innerHTML = 
+            "<u>Pakistan<u>";
+        }
+    </script>
+</body>
+</html>
+```
+---
+
+## **.innerText**
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+    <h2 id="head2"></h2>
+
+    <script>
+        const changeDM = () => {
+            document.getElementById("head1").innerText = 
+            "<u>Pakistan<u>";
+        }
+    </script>
+</body>
+</html>
+```
+---
+
+## **Attribute**
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images.png"  alt="this is image." id="img1" width="100" height="100">
+    <button onclick="changeDM()">Click</button>
+    
+
+    <script>
+        const changeDM = () => {
+            document.getElementById("img1").width = "200";
+        }
+    </script>
+</body>
+</html>
+```
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="button" onclick="get_username_password()">Submit</button>
+    </form>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        function get_username_password() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            console.log("Username:", username);
+            console.log("Password:", password); // Log separately for clarity
+
+            document.getElementById("p1").textContent = "Username: " + username; // Use textContent
+            document.getElementById("p2").textContent = "Password: " + password; // Use textContent
+        }
+    </script>
+</body>
+</html>
+```
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt et sequi saepe quae! Delectus facere ut laudantium repellendus tempore illum quisquam nihil numquam placeat tempora. Voluptates tempora dolor animi.</p>
+    <button type="button" onclick="color_change()">Color Change</button>
+
+    <script>
+        const color_change = () => {
+            document.getElementById("p1").style.color = "Red";
+        }
+    </script>
+</body>
+</html>
+```
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt et sequi saepe quae! Delectus facere ut laudantium repellendus tempore illum quisquam nihil numquam placeat tempora. Voluptates tempora dolor animi.</p>
+    <button type="button" onclick="color_change()">Color Change</button>
+
+    <script>
+        const color_change = () => {
+            document.getElementById("p1").style.color = "Red";
+            document.getElementById("p1").style.backgroundColor = "gray";
+        }
+    </script>
+</body>
+</html>
+```
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1" onclick="para_fun(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt et sequi saepe quae! Delectus facere ut laudantium repellendus tempore illum quisquam nihil numquam placeat tempora. Voluptates tempora dolor animi.</p>
+
+    <p id="p2" onclick="para_fun(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt et sequi saepe quae! Delectus facere ut laudantium repellendus tempore illum quisquam nihil numquam placeat tempora. Voluptates tempora dolor animi.</p>
+
+    <script>
+        const para_fun = (para) => {
+            console.log(para)
+        }
+    </script>
+</body>
+</html>
+```
+---
+
+## **createElement**
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas consequuntur veniam esse aliquam dicta nesciunt, sequi laboriosam dolore ab eligendi optio nulla ipsum iste doloremque blanditiis soluta reprehenderit temporibus. Alias?</p>
+    <button type="button" onclick="create_p()">This is Button</button>
+    
+
+    <script>
+        const create_p = () => {
+            const p = document.createElement("p");
+            p.id = "abc";
+            p.innerHTML = "this is a new paragraph";
+            document.body.appendChild(p);
+        }
+    </script>
+</body>
+</html>
+```
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas consequuntur veniam esse aliquam dicta nesciunt, sequi laboriosam dolore ab eligendi optio nulla ipsum iste doloremque blanditiis soluta reprehenderit temporibus. Alias?</p>
+    <button type="button" onclick="create_p()">This is Button</button>
+
+    <div id="new"></div>
+    
+
+    <script>
+        const create_p = () => {
+            const p = document.createElement("p");
+            p.id = "abc";
+            p.innerHTML = "this is a new paragraph";
+            document.getElementById("new").appendChild(p);
+        }
+    </script>
+</body>
+</html>
+```
+
+```javascript
+
+```
+
+```javascript
+
+```
+
+
