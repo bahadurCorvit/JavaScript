@@ -12,8 +12,25 @@ let element = document.getElementById("elementID");
 ```
 
 ```javascript
-let header = document.getElementById("main-header");
-header.style.color = "blue";  // Changes the color of the element with id 'main-header' to blue.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+
+    <script>
+        const changeDM = () => {
+            document.getElementById("head1").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
 ```
 
 ## 2. `getElementsByClassName`
@@ -26,10 +43,26 @@ let elements = document.getElementsByClassName("className");
 ```
 
 ```javascript
-let buttons = document.getElementsByClassName("btn");
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].style.backgroundColor = "green";  // Changes the background color of all elements with the class 'btn' to green.
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 class="head1">This is a heading</h1>
+
+    <script>
+        const changeDM = () => {
+            document.getElementByClass("head1").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
+
 ```
 
 ## 3. `getElementsByTagName`
@@ -42,10 +75,26 @@ let elements = document.getElementsByTagName("tagName");
 ```
 
 ```javascript
-let paragraphs = document.getElementsByTagName("p");
-for (let i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].style.fontSize = "16px";  // Changes the font size of all <p> elements to 16px.
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1>This is a heading</h1>
+
+
+    <script>
+        const changeDM = () => {
+            document.getElementsByTagName("p").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
 ```
 
 ## 4. `querySelector`
@@ -58,23 +107,76 @@ let element = document.querySelector("selector");
 ```
 
 ```javascript
-let mainContent = document.querySelector(".content");
-mainContent.style.border = "2px solid black";  // Adds a border to the first element with the class 'content'.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1>This is a heading</h1>
+
+    <script>
+        const changeDM = () => {
+            document.querySelector("hi").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
 ```
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+
+
+    <script>
+        const changeDM = () => {
+            document.querySelector("#head1").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
+```
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeDM()">Click</button>
+    <h1 class="head1">This is a heading</h1>
+
+
+    <script>
+        const changeDM = () => {
+            document.querySelector(".head1").innerHTML = 
+            "Pakistan";
+        }
+    </script>
+</body>
+</html>
+```
+
 
 ## 5. `querySelectorAll`
 
 The `querySelectorAll()` method returns a static NodeList representing a list of all the elements matching the specified CSS selector(s).
 
-### Syntax:
-```javascript
-let elements = document.querySelectorAll("selector");
-```
-
-```javascript
-let listItems = document.querySelectorAll("ul li");
-listItems.forEach(item => {
-    item.style.color = "red";  // Changes the text color of all <li> elements inside <ul> to red.
-});
-```
 ---
