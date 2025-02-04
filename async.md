@@ -228,3 +228,10 @@ const getData = async () => {
     console.log(data.length);
 }
 ```
+
+```javascript
+const getData = () => {
+    fatch('https://api.github.com/users/data').then((res => {
+        console.log(data.length)l
+    }))
+}
