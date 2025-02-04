@@ -8,7 +8,7 @@ Event handling is a crucial part of making interactive web pages, where you can 
 ### Syntax:
 ```javascript
 element.onclick = function() {
-    // Code to execute
+    // Code to execute 
 };
 ```
 
