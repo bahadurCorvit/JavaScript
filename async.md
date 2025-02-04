@@ -235,3 +235,4 @@ const getData = () => {
         console.log(data.length)l
     }))
 }
+---
