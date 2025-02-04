@@ -1322,7 +1322,7 @@ element.onkeydown = function(event) {
 </html>
 ```
 
-## 7. `onkeyup`
+## 5. `onkeyup`
 
 The `onkeyup` event is triggered when a key is released after being pressed.
 
