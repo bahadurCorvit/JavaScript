@@ -40,7 +40,7 @@ three();
 ```
 ---
 
-### **callback (Managing Asynchronous Operations)**
+### **Callback (Managing Asynchronous Operations)**
 ```javascript
 const one = (callback) => {
     setTimeout(() => {
