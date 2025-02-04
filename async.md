@@ -220,3 +220,11 @@ async function run(){
 
 run()
 ```
+---
+
+```javascript
+const getData = async () => {
+    const data = await fatch('https://api.github.com/users/data');
+    console.log(data.length);
+}
+```
