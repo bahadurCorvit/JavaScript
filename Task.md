@@ -51,8 +51,8 @@
 
  **Group-8**
 ```javascript
- Student Names = [];
- Task = "QR Code Generator";
+ Student Names = ["Haroon", "Umair"];
+ Task = "Movie Recommendation App";
  ```
   ---
 
@@ -108,8 +108,8 @@
 
    **Group-16**
 ```javascript
- Student Names = [];
- Task = "AI-Powered Resume Builder";
+ Student Names = ["Junaid", "Noman"];
+ Task = "Resume Analyzer";
  ```
   ---
 
@@ -122,15 +122,15 @@
 
    **Group-18**
 ```javascript
- Student Names = [];
- Task = "Random Joke Generator";
+ Student Names = ["Naheem", "Rehman"];
+ Task = "Lyrics Finder";
  ```
  ---
 
   **Group-19**
 ```javascript
- Student Names = [];
- Task = "Text Word Counter";
+ Student Names = ["Shakoor", "Mateen"];
+ Task = "Password Strength Checker";
  ```
  ---
 
@@ -179,36 +179,9 @@
  
   **Group-26**
 ```javascript
- Student Names = ["Shakoor", "Mateen"];
- Task = "Password Strength Checker";
- ```
- ---
-
-   **Group-27**
-```javascript
- Student Names = ["Naheem", "Rehman"];
- Task = "Lyrics Finder";
- ```
-  ---
-
-  **Group-28**
-```javascript
- Student Names = ["Junaid", "Noman"];
- Task = "Resume Analyzer";
- ```
- ---
-
-   **Group-29**
-```javascript
- Student Names = ["Haroon", "Umair"];
- Task = "Movie Recommendation App";
- ```
- ---
-
-  **Group-30**
-```javascript
- Student Names = ["Tyba Zahid"];
+ Student Names = ["Tyba, Alishba"];
  Task = "Daily Motivation App)";
  ```
  ---
+
 
