@@ -187,28 +187,28 @@
    **Group-27**
 ```javascript
  Student Names = ["Zulqurnain, Hamza"];
- Task = "";
+ Task = "Quiz App";
  ```
  ---
 
   **Group-28**
 ```javascript
  Student Names = ["Basit, uzair farooq"];
- Task = "";
+ Task = "News App";
  ```
  ---
 
    **Group-29**
 ```javascript
  Student Names = ["Noman, Junaid"];
- Task = "";
+ Task = "Map";
  ```
  ---
 
   **Group-30**
 ```javascript
  Student Names = [""];
- Task = "";
+ Task = "Calender 2025";
  ```
  ---
 
